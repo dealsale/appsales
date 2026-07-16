@@ -1,0 +1,93 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #f3f5fb;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: #24256f;
+}
+a:hover {
+  color: #e4572e;
+}
+
+@keyframes toastUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 12px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hover states (the design's style-hover attributes) */
+.hov-row:hover {
+  background: #f7f9fd !important;
+}
+.hov-nav:hover {
+  background: rgba(231, 234, 248, 0.12) !important;
+}
+.hov-primary:hover {
+  background: #32348f !important;
+}
+.hov-navy:hover {
+  background: #24256f !important;
+}
+.hov-accent:hover {
+  background: #c94a25 !important;
+}
+.hov-border:hover {
+  border-color: #24256f !important;
+}
+.hov-border-ink:hover {
+  border-color: #24256f !important;
+  color: #24256f !important;
+}
+.hov-quick:hover {
+  border-color: #24256f !important;
+  background: #f0f3fc !important;
+}
+.hov-lightbg:hover {
+  background: #f0f3fc !important;
+}
+.hov-ink:hover {
+  color: #191b2e !important;
+}
+
+.field:focus {
+  border-color: #24256f !important;
+}
+
+@media print {
+  [data-noprint] {
+    display: none !important;
+  }
+  [data-docwrap] {
+    position: static !important;
+    inset: auto !important;
+    background: none !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+  [data-doccard] {
+    box-shadow: none !important;
+    margin: 0 !important;
+    border: none !important;
+  }
+  [data-docbtns] {
+    display: none !important;
+  }
+}
